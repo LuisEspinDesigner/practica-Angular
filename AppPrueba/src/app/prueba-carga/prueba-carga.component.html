@@ -1,6 +1,10 @@
-<p>Este es el componete para prueba carga</p>
+<H1 class="d-flex justify-content-center">PRUEBA DE COMPONTE</H1>
 
-<button (click)="ver()">mostrar</button>
+  <div class="container d-flex justify-content-center flex-wrap" >
+    <app-card class="p-2" *ngFor="let item of listaCapitulos" [rutaImage]="item.image" [tituloCard]="item.name" ></app-card>
+  </div>
+<!--
+ <button (click)="ver()">mostrar</button>
 
 <ul>
   <li *ngFor="let elemento of elementos">{{ elemento }}</li>
@@ -23,4 +27,4 @@
   </tbody>
 </table>
 
-<h1 *ngIf="mostrar"> esto se puede ver</h1>
+<h1 *ngIf="mostrar"> esto se puede ver</h1> -->
