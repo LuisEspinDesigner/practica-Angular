@@ -1,0 +1,26 @@
+<p>Este es el componete para prueba carga</p>
+
+<button (click)="ver()">mostrar</button>
+
+<ul>
+  <li *ngFor="let elemento of elementos">{{ elemento }}</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Edad</th>
+      <th>Correo Electrónico</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let persona of personas">
+      <td>{{ persona.nombre }}</td>
+      <td>{{ persona.edad }}</td>
+      <td>{{ persona.correo }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 *ngIf="mostrar"> esto se puede ver</h1>
